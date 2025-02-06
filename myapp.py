@@ -84,6 +84,3 @@ with tabs[1]:
     chart_data["data"] = pd.to_datetime(chart_data["data"], format="%d-%m-%Y")
     chart_data = chart_data.sort_values("data").set_index("data")
     st.line_chart(chart_data["contagem"])
-
-if __name__ == "__main__":
-    main()
